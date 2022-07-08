@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 * { /* remove all default margins and padding */
   margin: 0;
   padding: 0;
@@ -142,6 +144,10 @@ img {
 .app-content h1, .app-content h2 {
   text-align: center;
   padding-bottom: 5px;
+}
+
+.app-content p {
+  font-family: "Nunito Sans";
 }
 
 .property-setter {
