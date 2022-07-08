@@ -14,7 +14,7 @@ const Navigation = () => (
     <Link to="/contact">Contact</Link>
     <Link to="/settings">Settings</Link>
     <Link to="/login">Login</Link>
-    <div id="launchpad"></div> 
+    <div id="launchpad-container"><div id="launchpad"></div></div> 
   </div>
 );
 

@@ -25,8 +25,15 @@ const App = () => {
 
   window.Appcues.identify(userId, { // feel free to add in any user properties here
     role: "tester",
-    signupDate: currentTime
+    signupDate: currentTime,
+    second_test: "test_value",
+    "[test]_property": "some value",
+    "$property": "another value",
+    "property2": "a third value"
   })
+
+
+  // window.Appcues.anonymous();
 
   window.Appcues.on("all", function(name, payload) {
     // console.log(name);     // uncomment these two lines if you'd like to
