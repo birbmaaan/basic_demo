@@ -28,10 +28,10 @@ const App = () => {
     signupDate: currentTime,
   })
 
-  setTimeout(() => {
-    console.log("Delayed for 1 second.");
-    window.Appcues.group('group1', {group1: "true"});
-  }, "1000")
+  // setTimeout(() => {
+  //   console.log("Delayed for 1 second.");
+  //   window.Appcues.group('group1', {group1: "true"});
+  // }, "1000")
     
 
 
