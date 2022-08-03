@@ -26,11 +26,14 @@ const App = () => {
   window.Appcues.identify(userId, { // feel free to add in any user properties here
     role: "tester",
     signupDate: currentTime,
-    second_test: "test_value",
-    "[test]_property": "some value",
-    "$property": "another value",
-    "property2": "a third value"
   })
+
+  setTimeout(() => {
+    console.log("Delayed for 1 second.");
+    window.Appcues.group('group1', {group1: "true"});
+  }, "1000")
+    
+
 
 
   // window.Appcues.anonymous();

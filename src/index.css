@@ -238,7 +238,10 @@ img {
 
 
 
-
+appcues-container:not(.fullscreen)[data-pattern-type=shorty][data-position^=top] {
+  top: 0px !important;
+  width: 100% !important;
+}
 
 
 /* CSS to make slideouts dynamically shorten to screen */
