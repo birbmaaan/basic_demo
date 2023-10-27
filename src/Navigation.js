@@ -6,7 +6,7 @@ import { Link, useHistory } from "react-router-dom";
   must be returned nested inside a single element (in this case, the #navigation div)
 */
 const Navigation = () => {
-  const history = useHistory();
+  // const history = useHistory();
 
   // const handleClick = () => {
   //   history.push("/settings?someview=sample1");
