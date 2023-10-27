@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /* 
   feel free to add/remove any HTML you would like. Just remember that all content
