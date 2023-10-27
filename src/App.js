@@ -39,32 +39,29 @@ const App = () => {
   const currentTime = parseInt(window.localStorage.timestamp);
 
   console.log('hello');
-  // window.Appcues.identify(543211, { // feel free to add in any user properties here
-  //   school: {
-  //     id: 12345
-  //   },
-  //   role: "tester",
-  //   signupDate: currentTime,
-  //   email: 'test@test.com'
-  // })
-//  window.Appcues.page()
+  window.Appcues.identify(543211, { // feel free to add in any user properties here
+    role: "tester",
+    signupDate: currentTime,
+    email: 'test@test.com'
+  })
+ window.Appcues.page()
 
-  // setTimeout(() => {
-  //   console.log("Delayed for 1 second.");
-  //   window.Appcues.group('group1', {group1: "true"});
-  // }, "1000")
+  setTimeout(() => {
+    console.log("Delayed for 1 second.");
+    window.Appcues.group('group1', {group1: "true"});
+  }, "1000")
     
-// window.Appcues.loadLaunchpad('#launchpad', { position: 'right' });
+window.Appcues.loadLaunchpad('#launchpad', { position: 'right' });
 
 
-  // window.Appcues.anonymous();
+  window.Appcues.anonymous();
 
-  // window.Appcues.on("all", function(name, payload) {
-  //   // console.log(name);     // uncomment these two lines if you'd like to
-  //   // console.log(payload);  // log all events into the dev tools console
+  window.Appcues.on("all", function(name, payload) {
+    // console.log(name);     // uncomment these two lines if you'd like to
+    // console.log(payload);  // log all events into the dev tools console
 
-  //   logEvents(name, payload); // adds events into the event log on the page
-  // })
+    logEvents(name, payload); // adds events into the event log on the page
+  })
 
   console.log('all done');
   
