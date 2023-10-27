@@ -8,12 +8,12 @@ import { Link, useHistory } from "react-router-dom";
 const Navigation = () => {
   const history = useHistory();
 
-  const handleClick = () => {
-    history.push("/settings?someview=sample1");
-    setTimeout(() => {
-      history.push("settings?someview=sample1&anotherview=sample2")
-    }, 2000);
-  }
+  // const handleClick = () => {
+  //   history.push("/settings?someview=sample1");
+  //   setTimeout(() => {
+  //     history.push("settings?someview=sample1&anotherview=sample2")
+  //   }, 2000);
+  // }
   
   return (
   <div id="navigation">
