@@ -5,6 +5,12 @@ import React from "react";
   must be returned nested inside a single element (in this case, the .app-content div)
 */
 
+const showMoney = () => {
+  console.log("I can't see the money");
+    window.Appcues.show('4cd6ccfd-6654-4cdd-b6c2-7dc445df88df');
+
+}
+
 const About = () => {
   return (
     <div className="app-content">
@@ -18,6 +24,7 @@ const About = () => {
         <li>???</li>
         <li>profit</li>
       </ol>
+      <button onClick={showMoney}>Show me the money</button>
     </div>
   );
 };

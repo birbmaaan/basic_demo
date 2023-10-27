@@ -9,7 +9,7 @@ const identifyUser = () => {
 
   window.localStorage.setItem("currentUser", newId.value); // sets new ID to persist across refresh
   window.Appcues.identify(newId.value); // identifies user with new value
-
+  // window.Appcues.track('logged in');
   newId.value = ''; // resets text input field
 }
 

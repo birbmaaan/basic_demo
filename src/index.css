@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@font-face {
+  font-family: 'CircularXX-Regular';
+  src:
+    url('https://s3-us-west-2.amazonaws.com/payments-dashboard-assets/dashboard.finixpayments.com/CircularXX-Regular.otf') format('otf');
+}
+/* @import url(https://s3-us-west-2.amazonaws.com/appcues-custom-fonts/raleway.css); */
+/* @font-face {
+  font-family: 'Raleway';
+  src: url(https://s3-us-west-2.amazonaws.com/appcues-custom-fonts/Raleway-Black.ttf) format('ttf');
+} */
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(https://s3-us-west-2.amazonaws.com/appcues-custom-fonts/Raleway-Black.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'TheNeueBlack';
+  src: url("https://theneueblack.s3.amazonaws.com/TheNeue-Black.woff2") format('woff2'),
+    url("https://theneueblack.s3.amazonaws.com/TheNeue-Black.woff") format('woff');
+}
 
 * { /* remove all default margins and padding */
   margin: 0;
@@ -73,6 +94,9 @@ img {
   color: rgb(190, 190, 190);
 }
 
+
+
+
 /* Appcues Launchpad styling */
 
 #launchpad {
@@ -93,6 +117,25 @@ img {
 .appcues-widget-dropdown {
   border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Main app styling */
@@ -236,13 +279,45 @@ img {
 
 /* custom Appcues styling */
 
-
+.checklist-main .checklist-header .progress-container {
+  display: none !important;
+}
 
 appcues-container:not(.fullscreen)[data-pattern-type=shorty][data-position^=top] {
   top: 0px !important;
   width: 100% !important;
 }
 
+appcues-checklist {
+  z-index: 20 !important;
+  left: 500px !important;
+}
+
+.checklist-container {
+  border-radius: 10px;
+}
+
+appcues-checklist .beacon {
+  color: red !important;
+  border-radius: 0px;
+}
+
+circle {
+  stroke: yellow;
+  stroke-width: 3;
+}
+
+.hotspot > div > .apc-spotlight {
+  background: black !important;
+  opacity: 90%;
+}
+
+/* CSS to change tooltip backdrops */
+
+.appcues-hotspots .hotspot>div>.apc-spotlight {
+  background: #160f41 !important;
+  opacity: 50%;
+}
 
 /* CSS to make slideouts dynamically shorten to screen */
 /*
@@ -253,4 +328,7 @@ appcues-container:not(.fullscreen)[data-pattern-type='shorty'], appcues-containe
 }
 
 */
+
+
+
 
